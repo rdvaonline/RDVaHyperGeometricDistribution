@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D0CD61E121E4388600AEF8E9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CD61E021E4388600AEF8E9 /* main.swift */; };
+		D0CD61E821E438DC00AEF8E9 /* HyperGeometricDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CD61E721E438DC00AEF8E9 /* HyperGeometricDistribution.swift */; };
+		D0CD61F021E4612A00AEF8E9 /* RDVaHyperGeometricDistributionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CD61EF21E4612A00AEF8E9 /* RDVaHyperGeometricDistributionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,21 @@
 /* Begin PBXFileReference section */
 		D0CD61DD21E4388600AEF8E9 /* RDVaHyperGeometricDistribution */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RDVaHyperGeometricDistribution; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0CD61E021E4388600AEF8E9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D0CD61E721E438DC00AEF8E9 /* HyperGeometricDistribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperGeometricDistribution.swift; sourceTree = "<group>"; };
+		D0CD61ED21E4612A00AEF8E9 /* RDVaHyperGeometricDistributionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDVaHyperGeometricDistributionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0CD61EF21E4612A00AEF8E9 /* RDVaHyperGeometricDistributionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDVaHyperGeometricDistributionTests.swift; sourceTree = "<group>"; };
+		D0CD61F121E4612A00AEF8E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D0CD61DA21E4388600AEF8E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CD61EA21E4612A00AEF8E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				D0CD61DF21E4388600AEF8E9 /* RDVaHyperGeometricDistribution */,
+				D0CD61EE21E4612A00AEF8E9 /* RDVaHyperGeometricDistributionTests */,
 				D0CD61DE21E4388600AEF8E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				D0CD61DD21E4388600AEF8E9 /* RDVaHyperGeometricDistribution */,
+				D0CD61ED21E4612A00AEF8E9 /* RDVaHyperGeometricDistributionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +73,18 @@
 			isa = PBXGroup;
 			children = (
 				D0CD61E021E4388600AEF8E9 /* main.swift */,
+				D0CD61E721E438DC00AEF8E9 /* HyperGeometricDistribution.swift */,
 			);
 			path = RDVaHyperGeometricDistribution;
+			sourceTree = "<group>";
+		};
+		D0CD61EE21E4612A00AEF8E9 /* RDVaHyperGeometricDistributionTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0CD61EF21E4612A00AEF8E9 /* RDVaHyperGeometricDistributionTests.swift */,
+				D0CD61F121E4612A00AEF8E9 /* Info.plist */,
+			);
+			path = RDVaHyperGeometricDistributionTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +107,23 @@
 			productReference = D0CD61DD21E4388600AEF8E9 /* RDVaHyperGeometricDistribution */;
 			productType = "com.apple.product-type.tool";
 		};
+		D0CD61EC21E4612A00AEF8E9 /* RDVaHyperGeometricDistributionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0CD61F221E4612A00AEF8E9 /* Build configuration list for PBXNativeTarget "RDVaHyperGeometricDistributionTests" */;
+			buildPhases = (
+				D0CD61E921E4612A00AEF8E9 /* Sources */,
+				D0CD61EA21E4612A00AEF8E9 /* Frameworks */,
+				D0CD61EB21E4612A00AEF8E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RDVaHyperGeometricDistributionTests;
+			productName = RDVaHyperGeometricDistributionTests;
+			productReference = D0CD61ED21E4612A00AEF8E9 /* RDVaHyperGeometricDistributionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +135,9 @@
 				ORGANIZATIONNAME = "Rob VanHoorne";
 				TargetAttributes = {
 					D0CD61DC21E4388600AEF8E9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D0CD61EC21E4612A00AEF8E9 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -110,16 +155,36 @@
 			projectRoot = "";
 			targets = (
 				D0CD61DC21E4388600AEF8E9 /* RDVaHyperGeometricDistribution */,
+				D0CD61EC21E4612A00AEF8E9 /* RDVaHyperGeometricDistributionTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0CD61EB21E4612A00AEF8E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0CD61D921E4388600AEF8E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0CD61E821E438DC00AEF8E9 /* HyperGeometricDistribution.swift in Sources */,
 				D0CD61E121E4388600AEF8E9 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CD61E921E4612A00AEF8E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0CD61F021E4612A00AEF8E9 /* RDVaHyperGeometricDistributionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +324,40 @@
 			};
 			name = Release;
 		};
+		D0CD61F321E4612A00AEF8E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RDVaHyperGeometricDistributionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rdva.online.RDVaHyperGeometricDistributionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		D0CD61F421E4612A00AEF8E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RDVaHyperGeometricDistributionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rdva.online.RDVaHyperGeometricDistributionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +375,15 @@
 			buildConfigurations = (
 				D0CD61E521E4388600AEF8E9 /* Debug */,
 				D0CD61E621E4388600AEF8E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0CD61F221E4612A00AEF8E9 /* Build configuration list for PBXNativeTarget "RDVaHyperGeometricDistributionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0CD61F321E4612A00AEF8E9 /* Debug */,
+				D0CD61F421E4612A00AEF8E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
